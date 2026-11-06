@@ -1,4 +1,4 @@
-select user_id, sum(revenue_usd) as revenue_usd
+select account_id, sum(revenue_usd) as revenue_usd
 from events
 where event_type = 'purchase'
 group by 1
